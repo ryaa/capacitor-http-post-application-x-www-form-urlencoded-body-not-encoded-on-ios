@@ -1,6 +1,6 @@
 # Capacitor HTTP not encoding POST request body on iOS
 
-This is a repo to reproduce the problem for the issue
+This is a repo to reproduce the problem for the issue https://github.com/ionic-team/capacitor/issues/7840
 
 # To install please:
 
