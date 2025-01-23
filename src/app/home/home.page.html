@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Demo the encoding issue on iOS
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Demo the encoding issue on iOS</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      Set up and configure the tool to monitor the network requests and responses (e.g. Charles Proxy) to see the issue.
+      Tap the button below to send a POST request to the server with a body that contains strings with special
+      characters.
+      Note that special characters are not encoded correctly on iOS but everything works fine on Android.
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" color="primary" (click)="sendPostRequest()">Send Request</ion-button>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
